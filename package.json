@@ -1,0 +1,30 @@
+{
+  "name": "angular-web-tour",
+  "description": "AngularWebTour - AngularJS directives for web application tour",
+  "version": "0.0.1",
+  "keywords": [
+    "angular",
+    "webtour",
+    "tour",
+    "help"
+  ],
+  "main": "dist/angular-web-tour.js",
+  "homepage": "http://pastya-uk.github.io/angular-web-tour",
+  "bugs": "https://github.com/pastya-uk/angular-web-tour/issues",
+  "author": {
+    "name": "Sudhesh Rajan",
+    "email": "sudheshrajan@gmail.com",
+    "url": "https://github.com/pastya-uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pastya-uk/angular-web-tour.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "$(npm bin)/gulp jshint karma:unit"
+  }
+}

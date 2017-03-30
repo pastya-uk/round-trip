@@ -1,0 +1,57 @@
+<div class="popover help-tour sharp-borders"> 
+	<div class="arrow"></div> 
+	<h3 class="popover-title sharp-borders">
+		<ng-transclude></ng-transclude>
+	</h3> 
+	<div class="popover-content container-fluid">
+		<ng-transclude></ng-transclude>
+	</div>
+</div>
+<div ng-attr-id="{{::helpTourStepId}}" class="popover help-tour sharp-borders">
+	<div class="arrow"></div>
+	<h3 class="popover-title sharp-borders">{{::title}}</h3>
+	<div class ="popover-content container-fluid">
+		<div class="row">
+		  <ng-transclude></ng-transclude>
+		</div>
+		<div class="row">
+      <div class="col-md-4 skip-class">
+        <a class="skipBtn pull-left" type="button"><i class="glyphicon glyphicon-ban-circle"></i>&nbsp; Skip</a>
+      </div>
+      <div class="col-md-8">
+        <div class="pull-right">
+          <button class="prevBtn btn" type="button"><i class="glyphicon glyphicon-chevron-left"></i>&nbsp;Previous</button> 
+          <button id="nextTitleBtn" class="nextBtn btn btn-primary" type="button">Next&nbsp;<i class="glyphicon glyphicon-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>		
+	</div>
+  <div class="modal-footer" ng-if="!state.noFooter">
+    <button class="btn btn-default close-button"
+            ng-click="skipHelpTour()"
+            translate>
+      SKIP
+    </button>
+
+    <button class="btn btn-danger force-close-button"
+            ng-disabled="isFirstStep"
+            ng-click="goToPrev()"
+            translate>
+      PREVIOUS
+    </button>
+
+    <button class="btn btn-primary upload-button"
+            ng-show="!isLastStep"
+            ng-click="goToNext()"
+            translate>
+      NEXT
+    </button>
+    
+    <button class="btn btn-primary upload-button"
+            ng-show="isLastStep"
+            ng-click="skipHelpTour()"
+            translate>
+      FINISH
+    </button>    
+  </div>
+</div>

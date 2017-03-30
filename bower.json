@@ -1,0 +1,43 @@
+{
+  "name": "angular-web-tour",
+  "description": "AngularWebTour - AngularJS directives for WebTour",
+  "version": "0.0.1",
+  "keywords": [
+    "angular",
+    "webtour",
+    "help",
+    "tour"
+  ],
+  "homepage": "http://pastya-uk.github.io/angular-web-tour",
+  "bugs": "https://github.com/pastya-uk/angular-web-tour/issues",
+  "author": {
+    "name": "Sudhesh Rajan",
+    "email": "sudheshrajan@gmail.com",
+    "url": "https://github.com/pastya-uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pastya-uk/angular-web-tour.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pastya-uk/angular-web-tour/blob/master/LICENSE.md"
+    }
+  ],
+  "main": [
+    "dist/angular-web-tour.js",
+    "dist/angular-web-tour.tpl.js"
+  ],
+  "ignore": [
+    "docs",
+    "test",
+    "tasks",
+    "CONTRIBUTING.md"
+  ],
+  "dependencies": {
+    "angular": "^1.5"
+  },
+  "devDependencies": {
+  }
+}
